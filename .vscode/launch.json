@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {"type":"node","request":"launch","name":"Run react-scripts","runtimeExecutable":"react-scripts","cwd":"${workspaceFolder}","args":[]},
+      {
+        "type": "pwa-chrome",
+        "request": "launch",
+        "name": "Launch React App",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}/src",
+        "sourceMaps": true,
+        "preLaunchTask": "npm: start"
+      },
+      {
+        "type": "pwa-chrome",
+        "request": "attach",
+        "name": "Attach to React App",
+        "port": 9222,
+        "webRoot": "${workspaceFolder}/src"
+      }
+    ]
+  }
+  
