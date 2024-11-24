@@ -6,9 +6,15 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+
+  /* 
+  Note: strict mode forces a double initialization to discover lifetime management issues.
+  This cases a problem with an async G6 graph initialization check.
+  <React.StrictMode> 
+  */
+  
     <App />
-  </React.StrictMode>
+  /* <React.StrictMode> */
 );
 
 // If you want to start measuring performance in your app, pass a function
