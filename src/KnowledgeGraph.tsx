@@ -15,6 +15,15 @@ type NodeData = {
   children?: NodeData[];
 };
 
+const createStyle = (baseColor: any) => ({
+  fill: baseColor,
+  stroke: baseColor,
+  labelFill: '#fff',
+  labelPadding: 2,
+  labelBackgroundFill: baseColor,
+  labelBackgroundRadius: 5,
+});
+
 
 const createGraph = (data: any, containerRef: any) => {
   const newGraph = new Graph({
@@ -56,6 +65,15 @@ const createGraph = (data: any, containerRef: any) => {
       },
     },
     behaviors: ['collapse-expand', 'drag-canvas', 'zoom-canvas'],
+    plugins: [
+      {
+        key: 'bubble-sets-a',
+        type: 'bubble-sets',
+        members: ["Classification", "Consensus1112"],
+        labelText: 'cluster-a',
+        ...createStyle('#1783FF'),
+      }
+    ]
   });
 
   newGraph.render();
@@ -96,13 +114,10 @@ const KnowledgeGraph: React.FC = () => {
   }, []); // Dependencies on graph and graphData
 
   return (
-    <div>
-      <h1>My AntV G6 Graph</h1>
       <div
         ref={containerRef} // Reference the container div
         style={{ width: '100%', height: '100%' }} // Style for the container
       />
-    </div>
   );
 };
 

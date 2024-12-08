@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Knowledge Graphs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+
+## Getting started: Development
+
+
+
+- `npm start`
+
+![launching-the-dev-server](/Users/anon/dev/knowledge-graph/docs/launching-the-dev-server.png)
+
+
+
+**Dev features**
+- [x] hot reloading TypeScript
+- [] hot reloading css
+
 
 ## Available Scripts
 
@@ -68,3 +84,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

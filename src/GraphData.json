@@ -1,5 +1,5 @@
 {
-    "id": "Modeling Methods",
+    "id": "Modeling Methods, hi there!",
     "children": [
       {
         "id": "Classification",
@@ -11,7 +11,7 @@
             "id": "Linear discriminant analysis"
           },
           {
-            "id": "Rules"
+            "id": "Rules1"
           },
           {
             "id": "Decision trees"
@@ -31,7 +31,7 @@
         ]
       },
       {
-        "id": "Consensus",
+        "id": "Consensus1112",
         "children": [
           {
             "id": "Models diversity",
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "id": "Regression1",
+        "id": "Regression",
         "children": [
           {
             "id": "Multiple linear regression"
