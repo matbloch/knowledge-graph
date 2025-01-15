@@ -32,6 +32,7 @@ const createGraph = (data: any, containerRef: any) => {
     autoFit: 'view',
     node: {
       style: {
+        size: 16,
         labelText: (d) => d.id,
         labelBackground: true,
         labelPlacement: function (d) {
@@ -53,10 +54,10 @@ const createGraph = (data: any, containerRef: any) => {
     layout: {
       type: 'mindmap',
       direction: 'H',
-      getHeight: () => 32,
-      getWidth: () => 32,
-      getVGap: () => 4,
-      getHGap: () => 64,
+      getHeight: () => 24, // Decrease node height
+      getWidth: () => 24,  // Decrease node width
+      getVGap: () => 2,    // Decrease vertical gap
+      getHGap: () => 40,   // Decrease horizontal gap
       getSide: (d: NodeData) => {
         if (d.id === 'Classification') {
           return 'left';
