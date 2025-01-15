@@ -39,6 +39,11 @@ const createGraph = (data: any, containerRef: any) => {
           const side = getNodeSide(this, d);
           return side === 'center' ? 'right' : side;
         },
+        labelCfg: {
+          style: {
+            fontSize: 10, // Smaller font size for labels
+          },
+        },
         ports: [{ placement: 'right' }, { placement: 'left' }],
       },
       animation: {
